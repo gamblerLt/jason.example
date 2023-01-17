@@ -15,8 +15,8 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT); // atvaizduos graziau
 
-        User user = new User("Rimas", "Spakauskas", 45);
-        User secondUser = new User("Petras", "Pethshyts", 54);
+        User user = new User("Rimas", "Spakauskas", "email", 44);
+        User secondUser = new User("Petras", "Pethshyts", "mainmail", 66);
 
         File file = new File("users.json");
         if(!file.exists()) {
@@ -47,11 +47,12 @@ public class Main {
         });
         System.out.println(users);
 
-        //mapo pvz
-        /*Map<String, Object> map = mapper.readValue(stringUser, new TypeReference<>() {});
-        System.out.println(map.get("netikrasVardas"));
-        System.out.println(map.get("kitaPavarde"));*/
+        System.out.println(mapper.writeValueAsString(users));
 
+        //mapo pvz
+        Map<String, Object> map = mapper.readValue(stringUser, new TypeReference<>() {});
+        System.out.println(map.get("netikrasVardas"));
+        System.out.println(map.get("kitaPavarde"));
 
 
     }
