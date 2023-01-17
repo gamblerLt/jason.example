@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -45,6 +46,11 @@ public class Main {
        List<User>users = mapper.readValue(file, new TypeReference<>() {
         });
         System.out.println(users);
+
+        //mapo pvz
+        /*Map<String, Object> map = mapper.readValue(stringUser, new TypeReference<>() {});
+        System.out.println(map.get("netikrasVardas"));
+        System.out.println(map.get("kitaPavarde"));*/
 
 
 
