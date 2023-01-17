@@ -1,13 +1,16 @@
 [ {
-  "name" : "Rimas",
-  "surname" : "Spakauskas",
-  "age" : 45
+  "netikrasVardas" : "Rimas",
+  "kitaPavarde" : "Spakauskas",
+  "email" : "email",
+  "age" : 44
 }, {
-  "name" : "Petras",
-  "surname" : "Pethshyts",
-  "age" : 54
+  "netikrasVardas" : "Petras",
+  "kitaPavarde" : "Pethshyts",
+  "email" : "mainmail",
+  "age" : 66
 }, {
-  "name" : "Petras",
-  "surname" : "Pethshyts",
-  "age" : 54
+  "netikrasVardas" : "Petras",
+  "kitaPavarde" : "Pethshyts",
+  "email" : "mainmail",
+  "age" : 66
 } ]
